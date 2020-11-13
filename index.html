@@ -3,20 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Cynical</title>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="cmanObjMove_v091.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/1.5.0/fabric.min.js"></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <button id="clear_complete">Clear</button>
-    <input id="size" placeholder="10" />
-    <span class="highlight"> a color: </span>
-    <button id="Purple" type="button">Purple</button>
-    <button id="Green" type="button">Green</button>
-    <button id="Yellow" type="button">Yellow</button>
-    <button id="Brown" type="button">Brown</button>
-    <button id="download" type="button" href="#" download="canvas.jpg">Download</button>
-    <div id="canvas_div">
-        <canvas id="white_board" width="10000" height="1000" style="border: 1px solid "></canvas>
-    </div>
+    <div class="canvas-container" style="width: 500px; height: 500px; position: relative; user-select: none;"><canvas id="c" width="1000" height="1000" style="border: 1px solid rgb(170, 170, 170); position: absolute; width: 500px; height: 500px; left: 0px; top: 0px; touch-action: none; user-select: none;" class="lower-canvas"></div>
+    <div style="display: inline-block; margin-left: 10px">
+        <div id="drawing-mode-options" class="drawing-mode-options">
+            <button id="drawing-mode" class="btn btn-info">Cancel drawing mode</button><br>
+            <button id="clear-canvas" class="btn btn-info">Clear</button><br>
+          <label for="drawing-mode-selector">Mode:</label>
+          <select id="drawing-mode-selector">
+            <option>Pencil</option>
+            <option>Circle</option>
+            <option>Spray</option>
+            <option>Pattern</option>
+            <option>hline</option>
+            <option>vline</option>
+            <option>square</option>
+            <option>diamond</option>
+            <option>texture</option>
+          </select><br>
+      
+          <label for="drawing-line-width">Line width:</label>
+          <span class="info">30</span><input type="range" value="30" min="0" max="150" id="drawing-line-width"><br>
+      
+          <label for="drawing-color">Line color:</label>
+          <input type="color" value="#005E7A" id="drawing-color"><br>
+      
+          <label for="drawing-shadow-color">Shadow color:</label>
+          <input type="color" value="#005E7A" id="drawing-shadow-color"><br>
+      
+          <label for="drawing-shadow-width">Shadow width:</label>
+          <span class="info">0</span><input type="range" value="0" min="0" max="50" id="drawing-shadow-width"><br>
+      
+          <label for="drawing-shadow-offset">Shadow offset:</label>
+          <span class="info">0</span><input type="range" value="0" min="0" max="50" id="drawing-shadow-offset"><br>
+        </div>
+      </div>
 </body>
 <script src="index.js"></script>
 </html>

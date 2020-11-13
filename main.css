@@ -1,0 +1,18 @@
+.color {
+    border: solid 3px;
+
+}
+
+button {
+    background-color: white;
+    border-color: white;
+    border-style: none;
+}
+
+.drawing-mode-options {
+    border: solid 2px;
+    margin-left: 30cm;
+    z-index: 3;
+    position: fixed;
+    top: 10px; 
+}

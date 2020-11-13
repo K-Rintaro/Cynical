@@ -6,7 +6,7 @@
     });
   
     fabric.Object.prototype.transparentCorners = false;
-  
+
     var drawingModeEl = $('drawing-mode'),
         drawingOptionsEl = $('drawing-mode-options'),
         drawingColorEl = $('drawing-color'),

@@ -9,7 +9,7 @@ button {
     border-style: none;
 }
 
-.drawing-mode-options {
+.allinclude {
     border: solid 2px;
     margin-left: 30cm;
     z-index: 3;

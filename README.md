@@ -1,4 +1,5 @@
 # Cynical
-Perfect Web Whiteboard 
+Perfect Web Whiteboard
 
-## Under Development 
+## What is this? 
+This is WIP project.

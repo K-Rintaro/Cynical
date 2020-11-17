@@ -1,3 +1,7 @@
+body {
+    font-family: "Roboto";
+}
+
 .color {
     border: solid 3px;
 
@@ -5,14 +9,19 @@
 
 button {
     background-color: white;
-    border-color: white;
-    border-style: none;
+    border-color: black;
 }
 
 .allinclude {
     border: solid 2px;
-    margin-left: 30cm;
+    margin-left: 27.5cm;
     z-index: 3;
     position: fixed;
     top: 10px; 
+    border-radius: 0.2cm;
+}
+
+.controls {
+    display: inline-block;
+    margin-left: 30cm;
 }
